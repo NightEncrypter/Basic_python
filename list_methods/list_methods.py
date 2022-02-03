@@ -71,4 +71,46 @@ grades = [
     },
 ]
 
-print(reduce(lambda x, y: x + y, map(lambda s: s["grade"], grades)))  # 232
+# print(reduce(lambda x, y: x + y, map(lambda s: s["grade"], grades)))
+
+
+# TODO ADD TWO LISTS
+var1 = [1, 2, 3]
+var2 = [2, 8, 9]
+
+
+# METHOD-1
+var3 = [*var1, *var2]
+print(var3,"cobine")
+
+# METHOD-2
+var4 = var1 + var2
+
+# Method-3
+# using list.extend() to concat
+var1.extend(var2)
+
+# print(var1.slice())
+
+print(str(var3))
+print(var3)
+print(var4)
+
+
+# Initializing list of dictionaries
+lis = [
+    {"name": "Nandini", "age": 20},
+    {"name": "Manjeet", "age": 20},
+    {"name": "Nikhil", "age": 17},
+]
+
+print("The list printed sorting by age: ")
+
+
+# Sorting the list in name and age
+sortedList = sorted(lis, key=lambda i: (i["age"]))
+
+
+print(sortedList)
+
+# print(str(lis))
